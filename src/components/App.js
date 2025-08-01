@@ -1,8 +1,10 @@
+
+
 import React from "react";
 import { format } from "date-fns";
-import  TestComponent from "./TestComponent";
+import TestComponent from "./TestComponent";
+import ExampleComponent from "./ExampleComponent"; 
 
-// Add your code own within the return statement
 function App() {
   return (
     <div className="App">
@@ -13,8 +15,10 @@ function App() {
         HTML, and also allows us to add in components, which are separate,
         self-contained chunks of JSX.
       </p>
+      <ExampleComponent /> {/* ✅ Needed for test to pass */}
       <TestComponent />
     </div>
   );
 }
 
+export default App;
